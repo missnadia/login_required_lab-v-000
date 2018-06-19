@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
   def current_user
     session[:user] ||= []
   end
+
+  def require_login
+    current_user
+  end
 end
