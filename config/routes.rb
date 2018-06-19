@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'application/hello'
-  
+
   get 'secrets/show'
 
   get 'sessions/new'
